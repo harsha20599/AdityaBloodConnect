@@ -34,12 +34,22 @@ public class HomeFragment extends Fragment {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                RegisterFragment registerFragment= new RegisterFragment();
+                FragmentManager manager = getFragmentManager();
+                manager.beginTransaction().replace(R.id.content_drawer, registerFragment , registerFragment.getTag()).commit();
+            }
+        });
+        find.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SearchFragment searchFragment= new SearchFragment();
+                FragmentManager manager = getFragmentManager();
+                manager.beginTransaction().replace(R.id.content_drawer, searchFragment, searchFragment.getTag()).commit();
             }
         });
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return view;
     }
 
 }

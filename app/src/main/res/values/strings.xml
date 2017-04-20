@@ -1,13 +1,30 @@
 <resources>
 
-    <string-array name="brew_array">
-        <item>Cappuccino</item>
-        <item>Espresso</item>
-        <item>Mocha</item>
-        <item>Caffè Americano</item>
-        <item>Cafe Zorro</item>
+    <string-array name="districts">
+        <item>Anantapur</item>
+        <item>Chittoor</item>
+        <item>East Godavari</item>
+        <item>Guntur</item>
+        <item>Kadapa</item>
+        <item>Kurnool</item>
+        <item>Krishna</item>
+        <item>Nellore</item>
+        <item>Prakasam</item>
+        <item>Srikakulam</item>
+        <item>Visakhapatnam</item>
+        <item>Vizianagaram</item>
+        <item>West Godavari</item>
     </string-array>
     <string name="app_name">Aditya Blood Connect</string>
+    <string name="visiontext">Aditya Blood Connect vision is:
+To pave way for a safer and better tommorrow.
+Safer, by bringing blood donors and those in need to a common platform.
+Better, by providing every person what he/she deserves the most, best education.
+Our aim in next 5 years,
+To be the real hope of every Indian in search of a voluntary blood donor.
+To set up a well organised infrastructure through out the country to cater to the education of the under
+resourced by way of maintaining a repository of contributed books and providing as many resources as
+possible for rural child education.</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

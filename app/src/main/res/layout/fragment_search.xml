@@ -1,26 +1,147 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#424242"
     tools:context="com.adityawebapps.adityabloodconnect.SearchFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="A+"
+                android:textSize="20sp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/a_plus"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="A-"
+                android:layout_toRightOf="@id/a_plus"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/a_minus"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="B+"
+                android:layout_toRightOf="@id/a_minus"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/b_plus"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="B-"
+                android:layout_toRightOf="@id/b_plus"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/b_minus"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="AB+"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/b_minus"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/ab_plus"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="AB-"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/a_minus"
+                android:textSize="20sp"
+                android:layout_marginLeft="65dp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/ab_minus"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="O+"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/ab_minus"
+                android:layout_below="@id/b_plus"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/o_plus"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="O-"
+                android:layout_toRightOf="@id/o_plus"
+                android:layout_below="@id/b_minus"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:background="@drawable/bg_white"
+                android:id="@+id/o_minus"/>
+
+        </RelativeLayout>
+
+        <AutoCompleteTextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SEARCH"
-            android:textAlignment="center"
-            android:textSize="25sp"
-            android:padding="5dp"
-            android:textColor="@color/red"
-            />
+            android:hint="District"
+            android:textColor="#fff"
+            android:textColorHint="#000000"
+            android:background="@drawable/bg_white"
+            android:padding="10dp"
+            android:id="@+id/district" />
+
+        <AutoCompleteTextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:textColor="#fff"
+            android:textColorHint="#000000"
+            android:background="@drawable/bg_white"
+            android:padding="10dp"
+            android:id="@+id/city" />
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:background="#757575"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="FIND DONORS"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:id="@+id/donor" />
 
 
-    </RelativeLayout>
-
-
-
-</FrameLayout>
+</RelativeLayout>
